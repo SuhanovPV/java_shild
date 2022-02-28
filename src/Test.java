@@ -1,9 +1,7 @@
-import java.io.IOException;
-import java.io.InputStream;
 
 public class Test {
-    public static void main(String[] args) throws IOException {
-        InputStream io = System.in;
-
+    public static void main(String[] args) {
+        TestClass t = new TestClass(10);
+        t.meth();
     }
 }
