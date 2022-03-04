@@ -1,7 +1,9 @@
 
 public class Test {
     public static void main(String[] args) {
-        TestClass t = new TestClass(10);
-        t.meth();
+        TestClass ob = new TestClass(0);
+        for(int i=0; i< 1000000; i++) {
+            ob.generator(i);
+        }
     }
 }

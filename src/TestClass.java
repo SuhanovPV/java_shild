@@ -1,7 +1,7 @@
 public class TestClass {
-
+    int x;
     public TestClass(int x) {
-        System.out.println("START CONSTRUCTOR");
+        this.x = x;
     }
 
     public void meth(){
@@ -9,6 +9,10 @@ public class TestClass {
     }
 
     protected void finalize() {
-        System.out.println("FINALIZE");
+        System.out.println("FINALIZE: " + x);
+    }
+
+    void generator(int i) {
+        TestClass o = new TestClass(i);
     }
 }
