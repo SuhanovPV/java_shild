@@ -1,9 +1,12 @@
 
 public class Test {
     public static void main(String[] args) {
-        short s= 256;
-        char c = '5';
-        int i = s + c;
+        int i = 1234567890;
+        long l = 12345678902347L;
+        System.out.println(i+l);
+        i+=l;
         System.out.println(i);
+
     }
+
 }
