@@ -1,13 +1,10 @@
+import java.lang.Long;
 
 public class Test {
     public static void main(String[] args) {
-        int x = 5;
-        int y = 2;
-        x ^= y;
-        y ^= x;
-        x ^= y;
-        System.out.println(x);
-        System.out.println(y);
+        long x = Long.MAX_VALUE;
+        System.out.println((float) x);
+        System.out.println((double) x);
 
     }
 
